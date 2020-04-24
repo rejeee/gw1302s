@@ -417,7 +417,7 @@ int main(int argc, char **argv)
 
     /* Configure the gateway */
     memset( &boardconf, 0, sizeof boardconf);
-    boardconf.lorawan_public = true;
+    boardconf.lorawan_public = false;
     boardconf.clksrc = clocksource;
     boardconf.full_duplex = false;
     strncpy(boardconf.spidev_path, spidev_path, sizeof boardconf.spidev_path);
