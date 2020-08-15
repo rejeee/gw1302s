@@ -1,0 +1,15 @@
+[Unit]
+Description=lorawan gw
+Wants=network.target
+After=network.target
+
+[Service]
+ExecStart=/home/pi/gw1302s/bin/gwstart.sh
+ExecReload=/bin/kill -HUP $MAINPID
+Restart=on-failure
+KillMode=process
+RestartSec=40s
+
+[Install]
+WantedBy=multi-user.target
+
