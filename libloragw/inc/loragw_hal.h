@@ -126,6 +126,8 @@ License: Revised BSD License, see LICENSE.TXT file include in the project
 /* Maximum size of Tx gain LUT */
 #define TX_GAIN_LUT_SIZE_MAX 16
 
+#define MIN_SF56_PREAMBLE   12
+
 /* -------------------------------------------------------------------------- */
 /* --- PUBLIC TYPES --------------------------------------------------------- */
 
